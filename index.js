@@ -1,6 +1,6 @@
 
 
-//this grabs the h1, but it will show as a Node rather than the h1 text we were hoping for
+//this grabs the FIRST h1, but it will show as a Node rather than the h1 text we were hoping for
 const h1 = document.querySelector(`h1`);
 console.log(h1);
 
@@ -20,11 +20,20 @@ console.log(li);
 //this grabs ALL the li's in the html, but it is in the form of a NodeList
 //NodeLists CANNOT be modified
 const LIs = document.querySelectorAll(`li`);
-console.log(LIs)
+console.log(LIs);
+
+
+//this grabs the li's in ul's only
+//notice how we are using the CSS Selectors
+const LIs = document.querySelectorAll(`ul > li`);
+console.log(LIs);
 
 //the [...LIs] ( called the 'spread operator' ) converts the LIs variable from a NodeList to an array
-// Now the data can be modified
+// Now the data can be modified if we decidie to store it in an array variable
 console.log([...LIs]);
+OR
+const array = [...LIs];
+console.log(array);
 
 
 
@@ -32,8 +41,12 @@ console.log([...LIs]);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-// const favNumsUl = document.querySelector(`#favorite-numbers`);
-// console.log(favNumsUl);
+
+
+
+//grabs the ul with an id of 'favorits-numbers'
+const favNumsUl = document.querySelector(`#favorite-numbers`);
+console.log(favNumsUl);
 
 // const leastFavNums = document.querySelectorAll(`.least-favorite`);
 // console.log(leastFavNums);
