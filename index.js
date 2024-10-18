@@ -48,7 +48,7 @@ console.log(array);
 
 
 
-//grabs the ul with an id of 'favorits-numbers'
+//grabs the ul with an id of 'favorite-numbers'
 const favNumsUl = document.querySelector(`#favorite-numbers`);
 console.log(favNumsUl);
 
@@ -80,10 +80,22 @@ console.log(favLIsArr);
 const li = document.createElement(`li`);
 console.log(li);
 
+
 //this sets the inner text of the li element we just created
 li.innerText = 28;
 console.log(li);
 
+
+
+//grabs the ul with an id of 'favorite-numbers'
+const ul = document.querySelector(`#favorite-numbers`);
+//this creates a new element of the given CSS Selector
+//this DOES NOT automatically put it on the page
+const li = document.createElement(`li`);
+//this sets the inner text of the li element we just created
+li.innerText = 28;
+//appends the newly created li to the ul 'favorite-numbers
+ul.append(li);
 
 
 
