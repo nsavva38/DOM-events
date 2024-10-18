@@ -1,6 +1,6 @@
 
 
-//this grabs the FIRST h1, but it will show as a Node rather than the h1 text we were hoping for
+//this grabs the FIRST h1 as a single element
 const h1 = document.querySelector(`h1`);
 console.log(h1);
 
@@ -27,7 +27,7 @@ const LIs = document.querySelectorAll(`li`);
 console.log(LIs);
 
 
-//this grabs the li's in ul's only
+//this grabs the li's in ul's only and puts them in a NodeList
 //notice how we are using the CSS Selectors
 const LIs = document.querySelectorAll(`ul > li`);
 console.log(LIs);
@@ -48,7 +48,7 @@ console.log(array);
 
 
 
-//grabs the ul with an id of 'favorits-numbers' and puts it in a Node
+//grabs the ul with an id of 'favorits-numbers'
 const favNumsUl = document.querySelector(`#favorite-numbers`);
 console.log(favNumsUl);
 
