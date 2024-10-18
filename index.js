@@ -4,6 +4,10 @@
 const h1 = document.querySelector(`h1`);
 console.log(h1);
 
+//grabs ALL the h1's and put them in a NodeList
+const h1 = document.querySelectorAll(`h1`);
+console.log(h1);
+
 
 //this grabs the FIRST li on the page
 const li = document.querySelector(`li`);
@@ -44,22 +48,33 @@ console.log(array);
 
 
 
-//grabs the ul with an id of 'favorits-numbers'
+//grabs the ul with an id of 'favorits-numbers' and puts it in a Node
 const favNumsUl = document.querySelector(`#favorite-numbers`);
 console.log(favNumsUl);
 
-// const leastFavNums = document.querySelectorAll(`.least-favorite`);
-// console.log(leastFavNums);
-// const leastFavNumsArr = [...leastFavNums];
-// console.log(leastFavNumsArr);
 
-// const favLIs = document.querySelectorAll(`.favorite`);
-// console.log(favLIs);
-// const favLIsArr = [...favLIs];
-// console.log(favLIsArr);
+//grabs ALL the li's with class 'least-favorite' and puts them in a NodeList
+const leastFavNums = document.querySelectorAll(`.least-favorite`);
+console.log(leastFavNums);
 
-// const h1 = document.querySelectorAll(`h1`);
-// console.log(h1);
+//converts the leastFavNums NodeList into an array
+const leastFavNumsArr = [...leastFavNums];
+console.log(leastFavNumsArr);
+
+
+//grabs ALL the li's with the class 'favorite'
+const favLIs = document.querySelectorAll(`.favorite`);
+console.log(favLIs);
+
+//converts the favLIs NodeList into an array
+const favLIsArr = [...favLIs];
+console.log(favLIsArr);
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 // const intervalId = setInterval(() => {
