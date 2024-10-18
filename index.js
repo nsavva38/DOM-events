@@ -9,14 +9,28 @@ console.log(h1);
 const li = document.querySelector(`li`);
 console.log(li);
 
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
+//this grabs ALL the li's in the html, but it is in the form of a NodeList
+//NodeLists CANNOT be modified
+const LIs = document.querySelectorAll(`li`);
+console.log(LIs)
 
-// const LIs = document.querySelectorAll(`li`);
-// console.log(LIs)
-// console.log([...LIs]);
+//the [...LIs] ( called the 'spread operator' ) converts the LIs variable from a NodeList to an array
+// Now the data can be modified
+console.log([...LIs]);
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 // const favNumsUl = document.querySelector(`#favorite-numbers`);
 // console.log(favNumsUl);
