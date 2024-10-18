@@ -1,5 +1,17 @@
-// const h1 = document.querySelector(`h1`);
-// console.log(h1);
+
+
+//this grabs the h1, but it will show as a Node rather than the h1 text we were hoping for
+const h1 = document.querySelector(`h1`);
+console.log(h1);
+
+
+//this grabs the FIRST li on the page
+const li = document.querySelector(`li`);
+console.log(li);
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 // const LIs = document.querySelectorAll(`li`);
