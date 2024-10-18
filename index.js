@@ -1,4 +1,4 @@
-
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 //this grabs the FIRST h1 as a single element
 const h1 = document.querySelector(`h1`);
@@ -73,6 +73,17 @@ console.log(favLIsArr);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////
+
+
+//this creates a new element of the given CSS Selector
+//this DOES NOT automatically put it on the page
+const li = document.createElement(`li`);
+console.log(li);
+
+//this sets the inner text of the li element we just created
+li.innerText = 28;
+console.log(li);
+
 
 
 
