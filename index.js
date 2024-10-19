@@ -94,7 +94,7 @@ const ul = document.querySelector(`#favorite-numbers`);
 const li = document.createElement(`li`);
 //this sets the inner text of the li element we just created
 li.innerText = 28;
-//appends the newly created li to the ul 'favorite-numbers
+//appends the newly created li to the ul 'favorite-numbers' and puts it on the page
 ul.append(li);
 
 
